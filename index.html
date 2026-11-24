@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BodyWeave unifies 3D garment generation and fitting through native body conditioning, producing body-aligned geometry and PBR appearance.">
+  <meta name="theme-color" content="#f8fbfd">
+  <meta property="og:title" content="BodyWeave: Native Body-Conditioned 3D Garment Generation">
+  <meta property="og:description" content="Explore body-conditioned garment geometry and PBR appearance in our interactive video showcase.">
+  <meta property="og:type" content="website">
+  <title>BodyWeave · Native Body-Conditioned 3D Garment Generation</title>
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="editorial.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <main id="main">
+    <section class="hero wrap">
+      <p class="eyebrow hero-kicker">Geometry, fit &amp; appearance</p>
+      <h1>Body<span>Weave</span></h1>
+      <h2>Native Body-Conditioned<br><em>3D Garment Generation</em></h2>
+      <div class="author-block" aria-label="Authors and affiliation">
+        <ul class="authors">
+          <li>Junyi Zhang<sup>1</sup></li>
+          <li>Yuanchuan Wang<sup>1</sup></li>
+          <li>Qichao Wang<sup>1</sup></li>
+          <li>Wenzhe Qian<sup>1</sup></li>
+          <li>Shizhuo Cheng<sup>1</sup></li>
+          <li>Min Zhang<sup>1,✉</sup></li>
+        </ul>
+        <p class="affiliation"><sup>1</sup> Zhejiang University</p>
+        <p class="author-note">✉ Corresponding author</p>
+      </div>
+      <p class="lead">From reference design to body-aligned garments.<br>Generate geometry and material appearance <em>with the wearer in mind.</em></p>
+      <div class="resources" aria-label="Project resources">
+        <div class="resource resource-paper" aria-disabled="true"><strong>arXiv</strong><small>Coming soon</small></div>
+        <div class="resource resource-code" aria-disabled="true"><strong>GitHub</strong><small>Coming soon</small></div>
+        <div class="resource resource-data" aria-disabled="true"><strong>Dataset</strong><small>Coming soon</small></div>
+      </div>
+      <figure id="demo" class="demo-figure">
+        <video id="demo-video" controls muted loop playsinline preload="metadata" poster="assets/demo-poster.webp" width="1920" height="1080" aria-label="BodyWeave garment showcase, rotating views of generated garments with PBR appearance" aria-describedby="demo-caption">
+          <source src="assets/demo.mp4" type="video/mp4">
+          Your browser does not support embedded video. <a href="assets/demo.mp4">Download the demo.</a>
+        </video>
+        <figcaption id="demo-caption"><span>Generated garments, seen from every angle.</span><a href="assets/demo-4k.mp4">View original in 4K ↗</a></figcaption>
+      </figure>
+    </section>
+    <section class="intro wrap" aria-labelledby="intro-title"><p class="eyebrow">The idea</p><h2 id="intro-title">Generate the garment.<br><em>Condition on the body.</em></h2><p>Creating garments for digital characters calls for both design fidelity and a fit that follows the wearer. BodyWeave <strong>unifies generation and fitting</strong> by using the target body as a spatial reference throughout geometry generation. The resulting geometry then guides material synthesis for physically based rendering.</p></section>
+    <section id="interactive" class="section wrap">
+      <div class="section-head"><div><p class="eyebrow">01 / Explore in 3D</p><h2>Artist-Created<br><em>Garments</em></h2></div><p>Explore BodyWeave results on Artist-Created Garments. Rotate each example to inspect garment geometry, body fit, and PBR appearance.</p></div>
+      <div class="model-choices" role="group" aria-label="Choose one of 20 characters">
+        <button type="button" class="model-choice" data-model="sport" aria-pressed="true"><img src="assets/models/sport-front.webp" alt="" loading="lazy"><strong>Bea</strong></button>
+        <button type="button" class="model-choice" data-model="suit" aria-pressed="false"><img src="assets/models/suit-front.webp" alt="" loading="lazy"><strong>Gwen</strong></button>
+        <button type="button" class="model-choice" data-model="layered" aria-pressed="false"><img src="assets/models/layered-front.webp" alt="" loading="lazy"><strong>Zelda</strong></button>
+        <button type="button" class="model-choice" data-model="qipao" aria-pressed="false"><img src="assets/models/qipao-front.webp" alt="" loading="lazy"><strong>Chun-Li</strong></button>
+        <button type="button" class="model-choice" data-model="coat" aria-pressed="false"><img src="assets/models/coat-front.webp" alt="" loading="lazy"><strong>Dabi</strong></button>
+        <button type="button" class="model-choice" data-model="gown" aria-pressed="false"><img src="assets/models/gown-front.webp" alt="" loading="lazy"><strong>Gentiana</strong></button>
+        <button type="button" class="model-choice" data-model="pilot" aria-pressed="false"><img src="assets/models/pilot-front.webp" alt="" loading="lazy"><strong>D.Va</strong></button>
+        <button type="button" class="model-choice" data-model="haman" aria-pressed="false"><img src="assets/models/haman-front.webp" alt="" loading="lazy"><strong>Haman Karn</strong></button>
+        <button type="button" class="model-choice" data-model="android21" aria-pressed="false"><img src="assets/models/android21-front.webp" alt="" loading="lazy"><strong>Android 21</strong></button>
+        <button type="button" class="model-choice" data-model="ayane" aria-pressed="false"><img src="assets/models/ayane-front.webp" alt="" loading="lazy"><strong>Ayane</strong></button>
+        <button type="button" class="model-choice" data-model="bowsette" aria-pressed="false"><img src="assets/models/bowsette-front.webp" alt="" loading="lazy"><strong>Bowsette</strong></button>
+        <button type="button" class="model-choice" data-model="ela" aria-pressed="false"><img src="assets/models/ela-front.webp" alt="" loading="lazy"><strong>Ela</strong></button>
+        <button type="button" class="model-choice" data-model="juliet" aria-pressed="false"><img src="assets/models/juliet-front.webp" alt="" loading="lazy"><strong>Juliet Starling</strong></button>
+        <button type="button" class="model-choice" data-model="kula" aria-pressed="false"><img src="assets/models/kula-front.webp" alt="" loading="lazy"><strong>Kula</strong></button>
+        <button type="button" class="model-choice" data-model="luong" aria-pressed="false"><img src="assets/models/luong-front.webp" alt="" loading="lazy"><strong>Luong</strong></button>
+        <button type="button" class="model-choice" data-model="marie" aria-pressed="false"><img src="assets/models/marie-front.webp" alt="" loading="lazy"><strong>Marie</strong></button>
+        <button type="button" class="model-choice" data-model="wangyi" aria-pressed="false"><img src="assets/models/wangyi-front.webp" alt="" loading="lazy"><strong>Wang Yi</strong></button>
+        <button type="button" class="model-choice" data-model="asta" aria-pressed="false"><img src="assets/models/asta-front.webp" alt="" loading="lazy"><strong>Asta</strong></button>
+        <button type="button" class="model-choice" data-model="denki" aria-pressed="false"><img src="assets/models/denki-front.webp" alt="" loading="lazy"><strong>Denki Kaminari</strong></button>
+        <button type="button" class="model-choice" data-model="izuku" aria-pressed="false"><img src="assets/models/izuku-front.webp" alt="" loading="lazy"><strong>Izuku Midoriya</strong></button>
+      </div>
+      <div class="case-navigation" aria-label="Browse characters">
+        <span id="case-position" aria-live="polite">01 / 20 · Bea</span>
+        <span class="case-hint">Swipe to browse all characters</span>
+        <div><button type="button" id="previous-case" aria-label="Previous character">←</button><button type="button" id="next-case" aria-label="Next character">→</button></div>
+      </div>
+      <div class="studio" id="model-studio">
+        <figure class="reference-panel"><p class="viewer-label">Reference image</p><img id="model-reference" src="assets/models/sport-input.webp" alt="Front reference image for the sport ensemble" loading="lazy"><figcaption>Front view of the input design</figcaption></figure>
+        <div class="viewer-panel">
+          <div class="viewer-heading"><div><p class="viewer-label">BodyWeave output</p><span id="model-title">Bea</span></div><button type="button" id="load-model" class="load-model">Explore in 3D <span aria-hidden="true">↗</span></button></div>
+          <div class="viewer-stage">
+            <img id="model-poster" src="assets/models/sport-oblique.webp" alt="Rendered preview of the BodyWeave sport ensemble on its target body" loading="lazy">
+            <model-viewer id="garment-viewer" camera-controls touch-action="pan-y" shadow-intensity="0.5" exposure="1" auto-rotate-delay="0" rotation-per-second="25deg" camera-orbit="0deg 80deg 105%" field-of-view="30deg" interaction-prompt="none" alt="Interactive BodyWeave garment on its target body" hidden></model-viewer>
+            <div id="model-loading" class="model-loading" role="status" hidden><span>Loading 3D model…</span><progress id="model-progress" max="1" aria-label="Model loading progress"></progress></div>
+          </div>
+          <div class="camera-toolbar" role="group" aria-label="Camera views">
+            <span>View</span><button type="button" data-camera="0" disabled>Front</button><button type="button" data-camera="90" disabled>Side</button><button type="button" data-camera="180" disabled>Back</button><button type="button" id="fullscreen-model" aria-pressed="false">Expand ⤢</button>
+          </div>
+          <div class="viewer-toolbar" role="group" aria-label="3D display options">
+            <button type="button" id="toggle-body" aria-pressed="true" disabled><svg class="control-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="7" r="3"></circle><path d="M5 21v-3a7 7 0 0 1 14 0v3M8 21v-4m8 4v-4"></path></svg><span>Body &amp; hair</span><span class="switch-mark" aria-hidden="true"></span></button>
+            <button type="button" id="toggle-material" aria-pressed="false" disabled><span class="control-icon" aria-hidden="true">◇</span><span>Geometry</span><span class="switch-mark" aria-hidden="true"></span></button>
+            <button type="button" id="toggle-rotation" aria-pressed="false" disabled><span class="control-icon" aria-hidden="true">↻</span><span id="rotation-label">Auto-rotate</span><span class="switch-mark" aria-hidden="true"></span></button>
+            <button type="button" id="reset-camera" disabled><span class="control-icon" aria-hidden="true">⟲</span><span>Reset view</span></button>
+          </div>
+        </div>
+      </div>
+      <p id="model-status" class="viewer-status" role="status" aria-live="polite">Choose a garment and select Explore in 3D. Drag to rotate; scroll or pinch to zoom.</p>
+      <p class="viewer-status">Interactive previews include display cleanup where applied. Paper comparisons show the original evaluated outputs.</p>
+      <noscript><p>Enable JavaScript to explore the 3D models. Rendered previews remain available above.</p></noscript>
+    </section>
+    <section id="results" class="section wrap"><div class="section-head"><div><p class="eyebrow">02 / Design, fit &amp; detail</p><h2>One design.<br><em>New bodies. Rich materials.</em></h2></div><p>From adapting a garment to another wearer to reproducing the texture of its fabric.</p></div>
+      <article class="result adaptation"><div class="result-copy"><span class="number">A</span><h3>One design, different bodies</h3><p>Keeping the source garment images fixed, BodyWeave adapts garment geometry to a new target body. The reference fit is obtained by simulating the same garment on that body.</p></div><figure><a href="assets/adaptation-full.webp"><img src="assets/adaptation-full.webp" alt="Comparison of garment adaptation from the source body to new target bodies." loading="lazy"></a><figcaption>Same reference design, new body condition. Select the figure to inspect the fits.</figcaption></figure></article>
+      <article class="result appearance"><div class="result-copy"><span class="number">B</span><h3>Appearance down to the fabric</h3><p>Body-conditioned geometry provides the foundation for material synthesis. Held-out views and detail crops compare generated appearance with the reference.</p></div><figure><a href="assets/appearance.webp"><img src="assets/appearance.webp" alt="Reference and synthesized garment appearances with enlarged fabric details." loading="lazy"></a></figure></article>
+      <article class="result penetration"><div class="result-copy"><span class="number">C</span><h3>Learning to respect the body</h3><p>Surface penetration supervision reduces intersections between the generated garment and its wearer. The comparison visualizes intersection depth with and without this supervision.</p></div><figure><a href="assets/penetration-full.webp"><img src="assets/penetration-full.webp" alt="Comparison of garment-body penetration with and without surface penetration loss, with depth visualizations." loading="lazy"></a></figure></article>
+    </section>
+    <section id="method" class="method"><div class="wrap section"><p class="eyebrow">03 / Method</p><h2>The body guides <em>every stage.</em></h2><p class="section-description">Given three reference garment views and a target body, BodyWeave builds garment geometry directly in the body's coordinate frame.</p><figure class="panel"><a href="assets/pipeline.webp"><img src="assets/pipeline.webp" alt="BodyWeave pipeline showing global body conditioning, local body attention, and surface penetration supervision." loading="lazy"></a></figure><div class="steps"><article><span>01</span><h3>Global Body Adapter</h3><p>Establishes garment placement and extent through body-aligned sparse support.</p></article><article><span>02</span><h3>Local Body Attention</h3><p>Guides surface refinement with nearby body geometry at low and high resolutions.</p></article><article><span>03</span><h3>Surface Penetration Loss</h3><p>Supervises decoded surfaces to reduce intersections between garment and body.</p></article></div></div></section>
+    <section id="dataset" class="section wrap"><p class="eyebrow">04 / Dataset</p><h2>Garment<span class="serif-word">Weave</span>3D</h2><p class="section-description">Aligned garment–body observations support learning across garment designs and wearers.</p><div class="stats"><div><strong>293K</strong><span>Aligned garment–body observations</span></div><div><strong>114K</strong><span>Same-design cross-body pairs</span></div></div><figure class="panel"><a href="assets/dataset.webp"><img src="assets/dataset.webp" alt="Overview of GarmentWeave3D garment designs, body variations, and material diversity." loading="lazy"></a></figure></section>
+      <section id="comparisons" class="appendix-gallery section wrap">
+        <div class="gallery-heading"><p class="eyebrow">05 / Full comparisons</p><h3>Explore the full comparison gallery.</h3><p>Extended results from the supplementary material, across dataset garments and artist-created designs.</p></div>
+        <div class="gallery-tabs" role="group" aria-label="Choose a comparison sheet">
+          <button type="button" data-sheet="geometry-gw" aria-pressed="true">Geometry · GarmentWeave3D</button>
+          <button type="button" data-sheet="geometry-artist" aria-pressed="false">Geometry · Artist-created</button>
+          <button type="button" data-sheet="materials-gw" aria-pressed="false">Appearance · GarmentWeave3D</button>
+          <button type="button" data-sheet="materials-artist" aria-pressed="false">Appearance · Artist-created</button>
+        </div>
+        <figure class="panel"><a id="gallery-link" href="assets/geometry-gw.webp"><img id="gallery-image" src="assets/geometry-gw.webp" alt="Extended geometric reconstruction comparisons on GarmentWeave3D" loading="lazy" width="2600" height="3076"></a><figcaption id="gallery-caption">Geometric reconstruction on GarmentWeave3D. Select the figure to enlarge.</figcaption></figure>
+      </section>
+  </main>
+  <footer class="wrap"><a class="wordmark" href="#">Body<span>Weave</span></a><p>Native Body-Conditioned 3D Garment Generation</p><a href="#">Back to top ↑</a></footer>
+  <dialog id="figure-dialog" aria-label="Enlarged research figure">
+    <div class="figure-toolbar"><span id="figure-zoom-label" aria-live="polite">Fit</span><button type="button" id="zoom-out" aria-label="Zoom out">−</button><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-fit">Fit</button><button type="button" id="zoom-original">100%</button><button type="button" id="close-figure" aria-label="Close enlarged figure">Close ×</button></div>
+    <p class="figure-hint">Zoom for detail · Drag to pan</p>
+    <div id="figure-viewport" tabindex="0" aria-label="Scrollable figure"><img id="enlarged-figure" alt="" draggable="false"></div>
+  </dialog>
+</body>
+</html>
