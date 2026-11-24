@@ -120,6 +120,71 @@ body.model-expanded { overflow: hidden; }
 #figure-viewport { flex: 1; min-height: 0; overflow: auto; padding: 16px; cursor: grab; touch-action: pan-x pan-y; overscroll-behavior: contain; }
 #figure-viewport.is-dragging { cursor: grabbing; user-select: none; }
 #enlarged-figure { max-width: none; margin: auto; }
+@media (min-width: 701px) {
+  .wrap { width: min(1040px, calc(100% - 64px)); }
+  body { font-size: 16px; line-height: 1.7; }
+  .hero { padding-top: 30px; }
+  .hero h1 { font-size: clamp(62px, 6vw, 82px); margin-bottom: 12px; }
+  .hero h2 { font-size: clamp(26px, 2.4vw, 32px); line-height: 1.25; }
+  .hero-kicker { padding-bottom: 12px; margin-bottom: 16px; }
+  h2 { font-size: clamp(30px, 2.7vw, 38px); line-height: 1.22; margin-bottom: 18px; }
+  .authors { font-size: 16px; gap: 8px 20px; }
+  .author-block { margin: 16px auto 12px; }
+  .affiliation { font-size: 18px; margin-top: 6px; }
+  .author-note { font-size: 13px; margin-top: 3px; }
+  .lead { font-size: 16px; margin: 12px auto 16px; }
+  .lead em { font-size: 18px; }
+  .resource { min-width: 130px; padding: 8px 22px; }
+  .resource strong { font-size: 14px; }
+  .demo-figure { margin-top: 24px; }
+  .demo-figure figcaption { margin-top: 12px; }
+  .demo-figure figcaption span { font-size: 17px; }
+  figcaption { font-size: 13px; }
+  .intro { padding-block: 60px; gap: 0 48px; }
+  .intro > p:last-child { font-size: 16px; line-height: 1.75; }
+  .section { padding-block: 60px; }
+  .eyebrow { font-size: 11px; margin-bottom: 14px; }
+  .section-head { gap: 36px; margin-bottom: 26px; }
+  .section-head > p { font-size: 16px; line-height: 1.7; margin-bottom: 18px; }
+  .result { margin-top: 24px; padding: 24px; }
+  .result-copy { grid-template-columns: 28px 1fr 1.25fr; gap: 18px; margin-bottom: 20px; }
+  .result-copy h3, .appearance .result-copy h3 { font-size: 22px; }
+  .result-copy p { font-size: 15px; line-height: 1.75; }
+  .result figure, .panel { padding: 14px; }
+  .penetration figure { max-width: 740px; }
+  .steps article { padding: 22px; }
+  .steps h3 { font-size: 18px; }
+  .steps p { font-size: 15px; line-height: 1.75; }
+  .section-description { font-size: 16px; line-height: 1.75; margin-bottom: 24px; }
+  .stats { padding: 24px 32px; gap: 32px; margin-block: 24px; }
+  .stats > div + div { padding-left: 32px; }
+  .stats strong { font-size: 50px; }
+  .stats span { font-size: 14px; margin-top: 4px; }
+  .model-choices { gap: 8px; margin-bottom: 20px; }
+  .model-choice { padding: 8px 4px; gap: 5px; }
+  .model-choice img { height: 80px; }
+  .model-choice strong { font-size: 12px; min-height: 32px; }
+  .case-navigation { font-size: 13px; margin-bottom: 14px; }
+  .studio { grid-template-columns: 190px 1fr; }
+  .reference-panel { padding: 20px 14px; }
+  .reference-panel > img { height: 250px; }
+  .reference-panel figcaption { font-size: 13px; }
+  .viewer-heading { padding: 14px 20px; }
+  .viewer-label { font-size: 11px; }
+  #model-title { font-size: 18px; }
+  .viewer-stage { height: 420px; }
+  .is-expanded .viewer-stage { height: auto; }
+  .viewer-toolbar { gap: 8px; padding: 12px; }
+  .viewer-toolbar button { font-size: 13px; padding: 8px 12px; min-height: 40px; }
+  .camera-toolbar { padding: 8px 12px; }
+  .camera-toolbar button { font-size: 13px; padding: 6px 12px; min-height: 36px; }
+  .load-model { font-size: 14px; padding: 9px 16px; }
+  .viewer-status { font-size: 13px; margin-top: 10px; }
+  .gallery-heading h3 { font-size: 26px; }
+  .gallery-heading p:last-child { font-size: 16px; }
+  .gallery-tabs button { font-size: 13px; padding: 11px 12px; }
+  footer p { font-size: 15px; }
+}
 @media (max-width: 700px) {
   .hero h1 { font-size: clamp(48px, 13vw, 82px); }
   .hero { padding-top: 24px; }
